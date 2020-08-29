@@ -41,7 +41,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("/images/bg-desktop.svg"), #664baf;
+  background: url("../images/bg-desktop.svg"), #664baf;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Open Sans", sans-serif;
@@ -191,7 +191,7 @@ body {
 
 @media screen and (max-width: 440px) {
   body {
-    background: url("/images/bg-mobile.svg"), #664baf;
+    background: url("../images/bg-mobile.svg"), #664baf;
     background-repeat: no-repeat;
   }
 
