@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?jkxnb5");
+  src: url("../fonts/icomoon.eot?jkxnb5#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?jkxnb5") format("truetype"),
+    url("../fonts/icomoon.woff?jkxnb5") format("woff"),
+    url("../fonts/icomoon.svg?jkxnb5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram1:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("images/bg-desktop.svg"), #664baf;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  max-width: 1444px;
+  padding: 50px 20px 20px 20px;
+}
+
+.hero__container {
+  display: flex;
+  padding-top: 60px;
+}
+
+.hero__description {
+  color: white;
+  padding: 50px 25px 25px 0;
+}
+
+.hero__description--title h1 {
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 40px;
+  width: 85%;
+  letter-spacing: 0.5px;
+}
+
+.hero__description--copy p {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.hero__description--button button {
+  font-size: 22px;
+  color: hsl(257, 40%, 49%);
+  padding: 15px 55px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 1px 6px black;
+}
+
+.hero__description--button button:hover {
+  opacity: 0.7;
+}
+
+.footer__container--list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 30px;
+}
+
+.footer__list--item a {
+  color: white;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .hero__container {
+    padding-top: 0px;
+  }
+
+  .hero__description {
+    color: white;
+    padding: 0px 10px 25px 0;
+  }
+
+  .hero__description--title h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .hero__container figure {
+    margin-left: 0;
+  }
+
+  .hero__description--copy p {
+    font-family: 10px;
+  }
+
+  .footer__container--list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    padding: 20px 10px;
+  }
+
+  .hero__container {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .hero__container figure {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+
+  .hero__description--button button {
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    padding: 10px 80px;
+    border: none;
+    border-radius: 35px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .header__logo--img {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .hero__container figure {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+
+  .hero__container figure img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .hero__container figure img {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    background: url("images/bg-mobile.svg"), #664baf;
+    background-repeat: no-repeat;
+  }
+
+  .hero__container figure img {
+    width: 300px;
+    margin-bottom: 1em;
+  }
+
+  .hero__description--title h1 {
+    font-size: 28px;
+    margin-bottom: 1em;
+  }
+
+  .hero__description--copy p {
+    /* font-size: 16px; */
+    margin-bottom: 3em;
+    font-size: 18px;
+  }
+
+  .footer__list--item a {
+    font-size: 10px;
+  }
+}
